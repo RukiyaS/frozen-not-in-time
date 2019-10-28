@@ -3,7 +3,7 @@ html {
 }
 
 .bg {
-  background-image: repeating-linear-gradient(-35deg, #b3fbff, #d4fdff 20px, #c9fcff 20px)
+  background-image: repeating-linear-gradient(-35deg, #b3fbff, #d4fdff 20px, #c9fcff 20px);
 }
 
 a {
@@ -23,15 +23,61 @@ a {
 
 .text {
   max-width: 19em;
+  transform: rotate(-4deg);
+  padding-bottom: 1em;
+  padding-top: .3em;
+  font-family: "Fredoka One", sans-serif;
 }
 
 h1 {
   color: #990073;
   margin: 0;
+  transform: rotate(-10deg);
 }
 
 p {
   color: #c09;
+  padding-bottom: 1em;
+}
+
+.content {
+  padding: 2em .5em 5em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+
+  animation: text 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  transform-origin: left center;
+}
+
+.cone {
+  animation: cone 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  z-index: 100;
+  max-width: 10em;
+}
+
+.cherry {
+  animation: cherry 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  max-width: 10em;
+}
+
+.mint-chip {
+  animation: mint 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  max-width: 9em;
+}
+
+.chocolate-chip {
+  animation: choco 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  max-width: 9em;
+}
+
+.vanilla-fudge {
+  animation: vanilla 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  max-width: 9em;
 }
 
 @keyframes text {
@@ -54,10 +100,102 @@ p {
 @keyframes cone {
 
   0% {
-
+    bottom: 100%;
   }
 
   100% {
+    bottom: 10px;
+    opacity: 100;
+  }
+
+}
+
+@keyframes cherry {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    opacity: 100;
+    bottom: 370px;
+  }
+
+}
+
+@keyframes mint {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    opacity: 100;
+    bottom: 120px;
+  }
+
+}
+
+@keyframes choco {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    opacity: 100;
+    bottom: 210px;
+    left: 90px;
+  }
+
+}
+
+@keyframes vanilla {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    opacity: 100;
+    bottom: 290px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .content {
+    padding-top: 3em;
+    font-family: "Fredoka One", sans-serif;
+  }
+
+  h1 {
+    padding-bottom: .4em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .content {
+    padding-top: 1em;
+  }
+
+  .cherry {
+    max-width: 9em;
+  }
+
+  @keyframes cherry {
+
+    0% {
+      bottom: 100%;
+    }
+
+    100% {
+      opacity: 100;
+      bottom: 360px;
+    }
 
   }
 
