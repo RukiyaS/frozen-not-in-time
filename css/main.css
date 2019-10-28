@@ -1,0 +1,64 @@
+html {
+  font-family: "Fredoka One", sans-serif;
+}
+
+.bg {
+  background-image: repeating-linear-gradient(-35deg, #b3fbff, #d4fdff 20px, #c9fcff 20px)
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-ghost {
+  border-color: #990073;
+  color: #c09;
+}
+
+.btn-ghost:hover {
+  background-color: #c09;
+  color: #990073;
+  border-color: #990073;
+}
+
+.text {
+  max-width: 19em;
+}
+
+h1 {
+  color: #990073;
+  margin: 0;
+}
+
+p {
+  color: #c09;
+}
+
+@keyframes text {
+
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+
+  50% {
+    opacity: 50;
+  }
+
+  100% {
+    opacity: 100;
+  }
+
+}
+
+@keyframes cone {
+
+  0% {
+
+  }
+
+  100% {
+
+  }
+
+}
